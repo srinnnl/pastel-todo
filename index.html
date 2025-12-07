@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pastel Todo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1 class="title">MY Todo List ✨</h1>
+
+        <form id="todoForm" class="input-row" autocomplete="off">
+            <input id="todoInput" type="text" placeholder="Add a new task..." required />
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+
+        <ul id="todoList" class="todo-list"></ul>
+
+        <div class="controls">
+            <span id="count">0 tasks</span>
+            <div class="small-btns">
+                <button id="clearDone" class="ghost">Clear done</button>
+                <button id="clearAll" class="ghost">Clear all</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
